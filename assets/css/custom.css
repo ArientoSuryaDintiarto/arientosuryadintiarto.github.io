@@ -90,6 +90,90 @@ p{
     border-radius: 10px;
 }
 
+.colxxx{
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.containersss{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.fronttt,
+.backk{
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  text-align: center;
+  min-height: 350px;
+  height: auto;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.fronttt:after{
+  position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: 0.2;
+    background-color: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.containerss .fronttt{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.containerss:hover .fronttt{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.containersss .fronttt{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.containersss:hover .fronttt{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+
+.fronttt .innerr p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
 
 .backk{
     position: absolute;
@@ -142,6 +226,36 @@ p{
           transform-style: preserve-3d;
 }
 
+
+
+.containersss .backk{
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.containersss .frontt{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.containersss:hover .backk{
+-webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+}
+
+.containerssss:hover .frontt{
+-webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+}
+
 .frontt .innerr p{
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -180,3 +294,4 @@ p{
       width: 100%;
   }
 }
+
