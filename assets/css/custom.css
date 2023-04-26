@@ -12,10 +12,17 @@
   font-size:16px !important;
   font-weight:700 !important;}
 
+.image.main.center-text {
+   font-size: 29px;
+   font-weight: normal;
+   line-height: 0.5;
+}
+  
 
 p{
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif !important;
   font-size:15px !important;
+  line-height: 1.2; 
   }
 
 .wrappers{
